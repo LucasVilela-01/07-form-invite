@@ -1,0 +1,114 @@
+.main-container {
+
+  & label {
+    margin-top: 1rem;
+    color: var(--text-body);
+    font: var(--body);
+  }
+
+  & input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    font: var(--body);
+    height: 3rem;
+  }
+
+  & input::placeholder {
+    color: var(--input-placeholder);
+  }
+
+  & .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  & .flex {
+    display: flex;
+    gap: 1rem;
+
+    & .input-wrapper {
+      width: 17rem;
+    }
+  }
+
+  /* style button type-event */
+
+  & .radio-flex {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+
+    & label {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  & .radio-wrapper {
+    background-color: var(--input-base);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.25rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    gap: 0.25rem;
+
+    & label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      cursor: pointer;
+
+      color: var(--input-placeholder);
+      font: var(--body-sm);
+
+      height: 2.5rem;
+      width: 8.125rem;
+      border-radius: 8px;
+      margin: 0;
+
+      background-color: var(--input-base);
+      transition: background-color 0.2s;
+
+      & img {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      & svg {
+        width: 1rem;
+        height: 1rem;
+        fill: var(--input-placeholder);
+        transition: fill 0.3s;
+      }
+    }
+
+    & input[type="radio"] {
+      display: none;
+      background-color: var(--input-base);;
+    }
+
+    & input[type="radio"]:hover {
+      background-color: #3f444b;
+    }
+
+    & input[type="radio"]:checked + label {
+      background-color: #2D3136;
+      margin: 0;
+      border-radius: 0.3125rem;
+      color: var(--text-header);
+      font: var(--body-sm);
+      font-weight: 600;
+      height: 2.5rem;
+    }
+
+    & input[type="radio"]:checked + label svg {
+      fill: var(--icon-checked);
+    }
+  }
+}
