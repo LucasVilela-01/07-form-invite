@@ -130,3 +130,39 @@
     resize: none;
   }
 }
+
+.personalization {
+
+  & .select-color {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & .option {
+      display: flex;
+      gap: 0.5rem;
+
+      & label {
+        display: flex;
+        margin: 0;
+        color: var(--input-placeholder);
+        font: var(--body-sm);
+      }
+      
+      & .button-color {
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: circle 0.1s;
+      }
+
+      & input[type="radio"] {
+        display: none;
+      }
+  
+      & input:checked + .button-color {
+        border: 2px solid #59B2FF;
+        border-radius: 50%;
+      }
+    }
+  }
+}
