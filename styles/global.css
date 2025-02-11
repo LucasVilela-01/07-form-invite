@@ -14,9 +14,9 @@
   --header-sm: 700 1.125rem/1.25rem var(--font-header);
 
   --font-body: 'Open Sans', sans-serif;
-  --body: 400 1rem var(--font-body);
-  --body-sm: 400 0.875rem var(--font-body);
-  --body-xs: 400 0.75rem var(--font-body);
+  --body: 400 1rem var(--font-body); /* 16px */
+  --body-sm: 400 0.875rem var(--font-body); /* 14px */
+  --body-xs: 400 0.75rem var(--font-body); /* 12px */
 
   /* Colors */
 
@@ -27,6 +27,7 @@
   --input-base: #1C1F21;
   --input-stroke: #363B40;
   --input-placeholder: #869198;
+  --shape-button: #2D3136;
 
   /* color icon-svg */
 
