@@ -151,7 +151,7 @@ main .main-container {
   }
 }
 
-/* button mode */
+/* config toggle switch */
 
 .mode-style {
 
@@ -192,10 +192,11 @@ main .main-container {
       }
 
       & input[type="checkbox"]:checked ~ .switch {
-        background-color: var(--text-header);
+        background-color: #59B2FF;
       }
 
       & input[type="checkbox"]:checked ~ .switch .slider {
+        background-color: var(--text-header);
         transform: translateX(2rem);
       }
 
@@ -223,6 +224,16 @@ main .main-container {
   & .cover-photo {
     & .cover-photo-wrapper {
       cursor: pointer;
+    }
+  }
+}
+
+.contact-event {
+  border-bottom: 1px solid var(--input-stroke);
+  
+  & .flex {
+    & .input-wrapper:last-child {
+      margin-bottom: 3rem;
     }
   }
 }
