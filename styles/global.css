@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scrollbar-width: thin; /* Deixa a barra mais fina */
+  scrollbar-color: var(--input-placeholder) transparent; /* Cor do scroll e do fundo */
 }
 
 :root {
@@ -28,6 +31,8 @@
   --input-stroke: #363B40;
   --input-placeholder: #869198;
   --shape-button: #2D3136;
+  --text: #59B2FF;
+  --semantic-error: #FF5959;
 
   /* color icon-svg */
 
@@ -36,4 +41,9 @@
 
 body {
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

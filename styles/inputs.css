@@ -14,6 +14,28 @@ main .main-container {
     color: var(--input-placeholder);
     font: var(--body);
     height: 3rem;
+
+    &:focus, &:focus {
+      outline: 1px solid var(--text);
+    }
+
+    &:invalid {
+      border: 1px solid var(--semantic-error);
+    }
+
+    &[required] + .error {
+      display: flex;
+      align-items: center;
+
+      font: var(--body-xs);
+      color: var(--semantic-error);
+
+      margin-top: 0.5rem;
+    }
+
+    &:not(:focus):valid + .error {
+      display: none;
+    }
   }
 
   & input::placeholder {

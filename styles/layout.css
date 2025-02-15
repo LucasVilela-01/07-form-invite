@@ -29,20 +29,19 @@ body {
 
 
 aside {
-  overflow: hidden;
   background-image: url(../assets/Background.png);
   background-repeat: no-repeat;
   background-size: contain;
   
   padding: 2rem;
-  max-height: 45.5rem;
-  max-width: 25rem;
-  border-radius: 12px;
+  height: 45.5rem;
+  width: 25rem;
+  border-radius: 0.75rem;
   
   margin-left: auto;
   
   & .aside-container {
-    max-width: 21rem;
+    width: 21rem;
     
     & img {
       width: 3rem;
@@ -69,11 +68,10 @@ main {
   overflow: auto;
 
   padding: 5rem 8.125rem;
-
-  margin-right: auto;
+  border-radius: 0.75rem;
 
   & .main-container {
-    width: 35rem;
+    width: 100%;
 
     & h1 {
       font: var(--header-md);
@@ -255,7 +253,7 @@ main {
 
   & strong {
     font-weight: 500;
-    color: #59B2FF;
+    color: var(--text);
     text-decoration: underline;
   }
 }
@@ -281,3 +279,29 @@ main {
     background-image: url(../assets/icons/checked.svg);
   }
 }
+
+button {
+  width: 11.25rem;
+  height: 3rem;
+
+  border-radius: 0.5rem;
+  padding: 1.25rem 0.75rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1D6FB6;
+  border: none;
+
+  font: var(--body);
+  color: var(--text-header);
+
+  margin-top: 3rem;
+  margin-left: auto;
+
+  cursor: pointer;
+}
+
